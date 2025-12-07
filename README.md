@@ -324,10 +324,9 @@ Wahab et al. (2024)
 “A Comparative Study of Machine Learning Models for Credit Card Default Prediction”,
 Journal of Risk and Financial Management, 2024.
 
-10. Project Structure (Suggested)
+10. Project Structure
 
-You can organize the repo like this:
-
+```
 .
 ├── README.md
 ├── data/
@@ -344,4 +343,5 @@ You can organize the repo like this:
 
 
 This can be adjusted as the project evolves.
+```
 
