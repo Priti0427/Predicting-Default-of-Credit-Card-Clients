@@ -233,9 +233,8 @@ Planned content:
   - What features showed up as most important (e.g., credit limit, repayment status, bill amounts)?
   - How does class imbalance affect performance?
 
-Example structure to fill in later:
+Example structure to fill in:
 
-```text
 Logistic Regression:
 - AUC: TBD
 - F1: TBD
