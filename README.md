@@ -42,7 +42,7 @@ Ultimately, this work is inspired by and extends prior research that shows:
 
 **Link:**
 
-- [(Add official UCI link here)](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
+- [(official UCI link)](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
 
 **Size & Structure:**
 
