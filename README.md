@@ -6,7 +6,7 @@ Team: **Devdeep · Dennis · Priti**
 Course: **CS613 – Machine Learning**  
 Project: **Predicting Default of Credit Card Clients (UCI Taiwan Dataset)**
 
----
+
 
 ## 1. Project Overview
 
@@ -24,7 +24,6 @@ Ultimately, this work is inspired by and extends prior research that shows:
 - Neural networks and ensembles can outperform traditional models in terms of metrics like **AUC** and **F1**.
 - Logistic regression remains popular in finance due to its **interpretability** and regulatory acceptance.
 
----
 
 ## 2. Problem Statement
 
@@ -36,7 +35,6 @@ Ultimately, this work is inspired by and extends prior research that shows:
 - Supports **IFRS 9**-style tasks like estimating **Probability of Default (PD)** and Expected Credit Loss.
 - Reduces credit losses and improves financial stability and decision-making.
 
----
 
 ## 3. Dataset
 
@@ -81,7 +79,6 @@ Ultimately, this work is inspired by and extends prior research that shows:
 
 We explicitly treat this as an **imbalanced classification** problem.
 
----
 
 ## 4. Related Work
 
@@ -187,7 +184,6 @@ We evaluate using:
 
 Given class imbalance, we will pay particular attention to **Recall** and **AUC**, rather than Accuracy alone.
 
----
 
 ## 6. Implementation Details
 
@@ -222,7 +218,6 @@ Given class imbalance, we will pay particular attention to **Recall** and **AUC*
 
 _(We can add a more detailed “How to Run” with exact paths once the repo structure is finalized.)_
 
----
 
 ## 7. Results & Observations
 
