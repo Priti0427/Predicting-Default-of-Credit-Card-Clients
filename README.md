@@ -1,12 +1,8 @@
-# Predicting-Default-of-Credit-Card-Clients
-
 # Credit Card Default Prediction – CS613 Machine Learning Project
 
 Team: **Devdeep · Dennis · Priti**  
 Course: **CS613 – Machine Learning**  
-Project: **Predicting Default of Credit Card Clients (UCI Taiwan Dataset)**
-
-
+Project: **Predicting Default of Credit Card Clients**
 
 ## 1. Project Overview
 
@@ -15,7 +11,7 @@ The goal of this project is to build machine learning models that **predict whet
 
 We:
 
-- Use the **UCI “Default of Credit Card Clients”** dataset (Taiwan credit card clients).
+- Use the **UCI “Default of Credit Card Clients”** dataset.
 - Benchmark **classic statistical models** (Logistic Regression) against **modern ML models** (Decision Trees, SVMs, and Ensembles).
 - Focus on both **predictive performance** and **interpretability**, with an eye toward **real-world credit risk use-cases**.
 
@@ -23,7 +19,6 @@ Ultimately, this work is inspired by and extends prior research that shows:
 
 - Neural networks and ensembles can outperform traditional models in terms of metrics like **AUC** and **F1**.
 - Logistic regression remains popular in finance due to its **interpretability** and regulatory acceptance.
-
 
 ## 2. Problem Statement
 
@@ -35,16 +30,15 @@ Ultimately, this work is inspired by and extends prior research that shows:
 - Supports **IFRS 9**-style tasks like estimating **Probability of Default (PD)** and Expected Credit Loss.
 - Reduces credit losses and improves financial stability and decision-making.
 
-
 ## 3. Dataset
 
 **Source:**
 
-- UCI Machine Learning Repository – _Default of Credit Card Clients_ (Taiwan)
+- UCI Machine Learning Repository – _Default of Credit Card Clients_
 
 **Link:**
 
-- (Add official UCI link here)
+- [(official UCI link)](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
 
 **Size & Structure:**
 
@@ -78,7 +72,6 @@ Ultimately, this work is inspired by and extends prior research that shows:
 - ~**22%** default
 
 We explicitly treat this as an **imbalanced classification** problem.
-
 
 ## 4. Related Work
 
@@ -164,7 +157,7 @@ We plan to train and compare:
 - **Support Vector Machine (SVM)**
 
   - Handles high-dimensional boundaries.
-  - Can capture complex margins (with kernel tricks if used).
+  - Can capture complex margins (with kernel tricks).
 
 - **Ensemble Methods (Planned)**
   - **Random Forest**
@@ -183,7 +176,6 @@ We evaluate using:
 - **Confusion Matrix**
 
 Given class imbalance, we will pay particular attention to **Recall** and **AUC**, rather than Accuracy alone.
-
 
 ## 6. Implementation Details
 
@@ -205,7 +197,7 @@ Given class imbalance, we will pay particular attention to **Recall** and **AUC*
 
 2. Open the notebook:
 
-   - `Copy_of_ml_project_Priti.ipynb` (or your main project notebook name)
+   - `ml_final_project.ipynb`
 
 3. Run cells in order:
 
@@ -218,6 +210,7 @@ Given class imbalance, we will pay particular attention to **Recall** and **AUC*
 
 _(We can add a more detailed “How to Run” with exact paths once the repo structure is finalized.)_
 
+---
 
 ## 7. Results & Observations
 
@@ -236,26 +229,30 @@ Planned content:
   - What features showed up as most important (e.g., credit limit, repayment status, bill amounts)?
   - How does class imbalance affect performance?
 
-Example structure to fill in later:
+Example structure to fill in:
 
-```text
 Logistic Regression:
+
 - AUC: TBD
 - F1: TBD
 
 Decision Tree:
+
 - AUC: TBD
 - F1: TBD
 
 SVM:
+
 - AUC: TBD
 - F1: TBD
 
 Ensemble (e.g., Random Forest):
+
 - AUC: TBD
 - F1: TBD
 
 Main findings:
+
 - TBD
 
 8. Future Work & Research Extensions
@@ -328,10 +325,9 @@ Wahab et al. (2024)
 “A Comparative Study of Machine Learning Models for Credit Card Default Prediction”,
 Journal of Risk and Financial Management, 2024.
 
-10. Project Structure (Suggested)
+10. Project Structure
 
-You can organize the repo like this:
-
+```
 .
 ├── README.md
 ├── data/
