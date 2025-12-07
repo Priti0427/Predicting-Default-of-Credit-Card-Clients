@@ -1,12 +1,10 @@
-# Predicting-Default-of-Credit-Card-Clients
 
 # Credit Card Default Prediction – CS613 Machine Learning Project
 
 Team: **Devdeep · Dennis · Priti**  
 Course: **CS613 – Machine Learning**  
-Project: **Predicting Default of Credit Card Clients (UCI Taiwan Dataset)**
+Project: **Predicting Default of Credit Card Clients**
 
----
 
 ## 1. Project Overview
 
@@ -15,7 +13,7 @@ The goal of this project is to build machine learning models that **predict whet
 
 We:
 
-- Use the **UCI “Default of Credit Card Clients”** dataset (Taiwan credit card clients).
+- Use the **UCI “Default of Credit Card Clients”** dataset.
 - Benchmark **classic statistical models** (Logistic Regression) against **modern ML models** (Decision Trees, SVMs, and Ensembles).
 - Focus on both **predictive performance** and **interpretability**, with an eye toward **real-world credit risk use-cases**.
 
@@ -24,7 +22,6 @@ Ultimately, this work is inspired by and extends prior research that shows:
 - Neural networks and ensembles can outperform traditional models in terms of metrics like **AUC** and **F1**.
 - Logistic regression remains popular in finance due to its **interpretability** and regulatory acceptance.
 
----
 
 ## 2. Problem Statement
 
@@ -36,17 +33,16 @@ Ultimately, this work is inspired by and extends prior research that shows:
 - Supports **IFRS 9**-style tasks like estimating **Probability of Default (PD)** and Expected Credit Loss.
 - Reduces credit losses and improves financial stability and decision-making.
 
----
 
 ## 3. Dataset
 
 **Source:**
 
-- UCI Machine Learning Repository – _Default of Credit Card Clients_ (Taiwan)
+- UCI Machine Learning Repository – _Default of Credit Card Clients_ 
 
 **Link:**
 
-- (Add official UCI link here)
+- [(Add official UCI link here)](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
 
 **Size & Structure:**
 
@@ -81,7 +77,6 @@ Ultimately, this work is inspired by and extends prior research that shows:
 
 We explicitly treat this as an **imbalanced classification** problem.
 
----
 
 ## 4. Related Work
 
@@ -167,7 +162,7 @@ We plan to train and compare:
 - **Support Vector Machine (SVM)**
 
   - Handles high-dimensional boundaries.
-  - Can capture complex margins (with kernel tricks if used).
+  - Can capture complex margins (with kernel tricks).
 
 - **Ensemble Methods (Planned)**
   - **Random Forest**
@@ -209,7 +204,7 @@ Given class imbalance, we will pay particular attention to **Recall** and **AUC*
 
 2. Open the notebook:
 
-   - `Copy_of_ml_project_Priti.ipynb` (or your main project notebook name)
+   - `ml_final_project.ipynb` 
 
 3. Run cells in order:
 
@@ -220,9 +215,6 @@ Given class imbalance, we will pay particular attention to **Recall** and **AUC*
    - Model evaluation
    - (Planned) Ensemble models & explainability
 
-_(We can add a more detailed “How to Run” with exact paths once the repo structure is finalized.)_
-
----
 
 ## 7. Results & Observations
 
@@ -353,4 +345,4 @@ You can organize the repo like this:
 
 
 This can be adjusted as the project evolves.
-```
+
