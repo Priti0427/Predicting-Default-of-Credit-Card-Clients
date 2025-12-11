@@ -1,5 +1,3 @@
-# Credit Card Default Prediction – CS613 Machine Learning Project
-
 **Course:** CS613 – Machine Learning  
 **Project:** Predicting Default of Credit Card Clients  
 **Team:** Priti Sagar, Devdeepsinh Zala, Dennis Zhuang
