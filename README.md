@@ -243,7 +243,7 @@ It can be done without install anything locally:
 
 **Note:** All required libraries are pre-installed in Google Colab!
 
-### 8.8. Verifying Results
+### 8.3. Verifying Results
 
 To verify the reproduced results, check that final model comparison table shows:
 
