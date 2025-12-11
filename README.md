@@ -12,7 +12,7 @@ Credit card defaults cause significant financial losses to banks and other lende
 
 - Cleaned and preprocessed 30,000 credit card records with 25 features
 - Addressed class imbalance (78%-22%) using cost-sensitive learning
-- Reduced features from 25 to 10 using feature importance analysis
+- Reduced features using feature importance analysis
 - Developed and compared 7 different machine learning models
 - **Best ensemble model achieved 80.06% accuracy with 74.35% AUC-ROC**
 
