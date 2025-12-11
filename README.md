@@ -4,10 +4,6 @@
 **Project:** Predicting Default of Credit Card Clients  
 **Team:** Priti Sagar, Devdeepsinh Zala, Dennis Zhuang
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0%2B-orange)](https://scikit-learn.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
 ---
 
 ## 1. Project Overview
@@ -153,7 +149,6 @@ Credit card defaults cause significant financial losses to banks and other lende
 - **Training Set:** 80% (24,000 samples)
 - **Test Set:** 20% (6,000 samples)
 - Stratified split to maintain class distribution
-- No validation set (used cross-validation during development)
 
 ### 5.4. Models Implemented
 
@@ -382,27 +377,8 @@ shap>=0.40.0
 credit-card-default-prediction/
 ├── README.md
 ├── requirements.txt
-├── data/
-│   └── default_of_credit_card_clients.xls
-├── notebooks/
-│   ├── 01_eda.ipynb
-│   ├── 02_preprocessing.ipynb
-│   ├── 03_feature_selection.ipynb
-│   ├── 04_model_training.ipynb
-│   └── 05_evaluation.ipynb
-├── src/
-│   ├── preprocessing.py
-│   ├── feature_selection.py
-│   ├── models.py
-│   └── evaluation.py
-├── results/
-│   ├── model_comparison.csv
-│   ├── confusion_matrices/
-│   └── roc_curves/
-└── reports/
-    ├── slides/
-    │   └── final_presentation.pdf
-    └── final_report.pdf
+├── default_of_credit_card_clients.xls
+├── ML_Final_Project.ipynb
 ```
 
 ### 10.3. Quick Start
