@@ -259,6 +259,3 @@ This project is for educational purposes as part of CS613 Machine Learning cours
 
 ---
 
-**Last Updated:** December 2024  
-**Course:** CS613 Machine Learning  
-**Institution:** Drexel University
