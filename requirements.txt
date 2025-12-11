@@ -1,0 +1,16 @@
+# Requirements
+
+python
+# Core libraries
+pandas>=1.3.0
+numpy>=1.21.0
+scikit-learn>=1.0.0
+
+# Visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Additional libraries
+xgboost>=1.5.0
+shap>=0.40.0
+```
