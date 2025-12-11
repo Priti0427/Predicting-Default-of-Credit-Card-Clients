@@ -24,14 +24,6 @@ Credit card defaults cause significant financial losses to banks and other lende
 
 > **Task:** Given a client's historical credit and payment behavior, predict whether they will **default on payment in the next month**.
 
-### Why This Problem Matters
-
-- Millions of customers increase banks' exposure to default risk
-- Traditional models rely on manual judgment and have limitations
-- Machine Learning captures non-linear patterns in payment data
-- Banks can make better data-driven decisions using these models
-- Supports regulatory requirements like IFRS 9 for Expected Credit Loss estimation
-
 ---
 
 ## 3. Dataset
@@ -114,8 +106,7 @@ Credit card defaults cause significant financial losses to banks and other lende
 
 **Feature Engineering:**
 
-- Categorical encoding (SEX, EDUCATION, MARRIAGE)
-- Nominal and ordinal encoding for payment status (PAY_0–PAY_6)
+- One Hot Encoding MARRIAGE column and Ordinal encoding on EDUCATION column)
 - Numeric features dominate the dataset (Bill amounts, Credit Limit, etc.)
 
 **Class Imbalance Handling:**
@@ -127,7 +118,6 @@ Credit card defaults cause significant financial losses to banks and other lende
 ### 5.2. Feature Selection
 
 **Original features:** 25  
-**Selected features:** 10
 
 **Method:**
 
@@ -187,9 +177,9 @@ Credit card defaults cause significant financial losses to banks and other lende
 **Best Overall Model:** Weighted Soft-Voting Ensemble
 
 - Achieves the best balance across all metrics
-- 80.06% accuracy (2% above baseline 78%)
+- 80.06% accuracy
 - 74.35% AUC-ROC (strong discriminative ability)
-- Combines interpretability of LR with power of SVM
+- Combines interpretability of LR with power of SVM and decision Tree
 
 **Recall vs Precision Trade-off:**
 
@@ -203,29 +193,6 @@ Credit card defaults cause significant financial losses to banks and other lende
 - Best model accuracy: 80.83% (Random Forest cost-sensitive)
 - **Real improvement:** 45-62% recall (catching actual defaults vs 0% for dummy model)
 
-### 6.3. Confusion Matrix Analysis
-
-**Ensemble Model (Best Balance):**
-
-```
-                 Predicted
-                 No Default  Default
-Actual No Default    4199      468
-       Default        727      599
-```
-
-**Interpretation:**
-
-- **True Positives (599):** Correctly identified defaults
-- **False Negatives (727):** Missed defaults (Type II Error - critical for banks)
-- **False Positives (468):** False alarms (Type I Error - opportunity cost)
-- **True Negatives (4199):** Correctly identified non-defaults
-
-**Business Impact:**
-
-- Catches 45.17% of actual defaults (599 out of 1,326)
-- Much better than 0% for naive baseline
-- 468 false alarms out of 4,667 non-defaults (10% false positive rate)
 
 ---
 
@@ -264,98 +231,7 @@ For a bank with 1 million customers:
 
 ---
 
-## 8. Challenges and Solutions
-
-### 8.1. Data Challenges
-
-**Challenge:** Class imbalance (78%-22%)
-
-- **Solution:** Cost-sensitive learning with class weights
-- **Result:** Improved recall without severe accuracy loss
-
-**Challenge:** High dimensionality (25 features)
-
-- **Solution:** Feature selection using LR and RF importance intersection
-- **Result:** Reduced to 10 features, maintained performance
-
-### 8.2. Model Optimization
-
-**Challenge:** Balancing precision and recall
-
-- **Solution:** Tested multiple models with different cost structures
-- **Result:** Portfolio of models for different business needs
-
-**Challenge:** Interpretability requirements
-
-- **Solution:** Ensemble of interpretable models (LR + DT + SVM)
-- **Result:** Explainable predictions for regulatory compliance
-
----
-
-## 9. Future Work
-
-### 9.1. Model Improvements
-
-**Advanced Ensemble Methods:**
-
-- Test XGBoost, LightGBM, CatBoost
-- Implement stacking ensembles
-- Deep Neural Networks for complex pattern detection
-
-**Hyperparameter Optimization:**
-
-- Grid search and random search for optimal parameters
-- Bayesian optimization for ensemble weights
-- Cross-validation for robust performance estimates
-
-### 9.2. Feature Engineering
-
-**Time-Series Analysis:**
-
-- Treat 6-month payment history as sequential data
-- Use LSTM/GRU for temporal pattern detection
-- Calculate trend and volatility features
-
-**Derived Features:**
-
-- Credit utilization ratios
-- Payment consistency metrics
-- Rolling averages and standard deviations
-
-### 9.3. Explainability
-
-**SHAP Values:**
-
-- Implement SHAP for model-agnostic explanations
-- Visualize feature contributions for individual predictions
-- Identify most important features globally
-
-**Fairness Analysis:**
-
-- Check for bias across demographic groups (SEX, AGE, EDUCATION)
-- Ensure equal error rates across protected classes
-- Implement bias mitigation strategies if needed
-
-### 9.4. Deployment Considerations
-
-**Production Pipeline:**
-
-- Real-time prediction API
-- Model monitoring and drift detection
-- Automated retraining pipeline
-
-**A/B Testing:**
-
-- Compare model decisions with existing system
-- Measure financial impact in production
-- Gradual rollout with risk controls
-
----
-
-## 10. Implementation
-
-
-### 10.1. Project Structure
+### 8. Project Structure
 
 ```
 credit-card-default-prediction/
@@ -367,7 +243,7 @@ credit-card-default-prediction/
 
 ---
 
-## 11. References
+## 9. References
 
 ### Academic Papers
 
@@ -391,7 +267,7 @@ credit-card-default-prediction/
 
 ---
 
-## 12. Team
+## 10. Team
 
 **Priti Sagar**  
 Email: pp693@drexel.edu
@@ -404,13 +280,13 @@ Email: dz374@drexel.edu
 
 ---
 
-## 13. License
+## 11. License
 
 This project is for educational purposes as part of CS613 Machine Learning course at Drexel University.
 
 ---
 
-## 14. Acknowledgments
+## 12. Acknowledgments
 
 - UCI Machine Learning Repository for providing the dataset
 - Dr. Matthew Burlick for guidance and feedback
