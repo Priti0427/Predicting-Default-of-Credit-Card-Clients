@@ -29,7 +29,7 @@
 | ------------- | --------------------------------- | ----------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------- |
 | `ID`          | Unique identifier for each client | Integer     | 1 to 30,000                                                                                          | Not used for modeling                   |
 | `LIMIT_BAL`   | Credit limit (NT dollar)          | Integer     | 10,000 - 1,000,000                                                                                   | Amount of given credit                  |
-| `SEX`         | Gender                            | Categorical | 1 = Male<br>2 = Female                                                                               | Encoded as binary in preprocessing      |
+| `SEX`         | Gender                            | Categorical | 1 = Male<br>2 = Female                                                                               | not Encoded       |
 | `EDUCATION`   | Education level                   | Categorical | 1 = Graduate school<br>2 = University<br>3 = High school<br>4 = Others<br>5 = Unknown<br>6 = Unknown | Categories 5, 6 sometimes merged with 4 |
 | `MARRIAGE`    | Marital status                    | Categorical | 1 = Married<br>2 = Single<br>3 = Others                                                              | Category 0 exists but undocumented      |
 | `AGE`         | Age in years                      | Integer     | 21 - 79                                                                                              | Continuous variable                     |
@@ -165,36 +165,8 @@ Top features selected based on combined importance from:
 
 ---
 
-## Usage Notes
 
-1. **For Model Training:**
 
-   - Use stratified splitting to maintain class distribution
-   - Apply standardization after splitting to avoid data leakage
-   - Consider class weights or resampling for imbalanced data
 
-2. **For Feature Engineering:**
 
-   - Consider creating ratio features (e.g., payment/bill ratio)
-   - Calculate utilization rate (bill amount / credit limit)
-   - Engineer payment behavior trends over 6 months
 
-3. **For Interpretation:**
-   - Higher PAY_X values indicate worse payment behavior
-   - Negative BILL_AMT values are valid (credit balance)
-   - Focus on F1-Score and ROC-AUC for imbalanced evaluation
-
----
-
-## References
-
-- **Original Paper:** Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. _Expert Systems with Applications_, 36(2), 2473-2480.
-- **Dataset URL:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients)
-
----
-
-## Version Information
-
-- **Data Dictionary Version:** 1.0
-- **Last Updated:** December 2024
-- **Created For:** Credit Card Default Prediction ML Project
