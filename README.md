@@ -1,5 +1,9 @@
 # Credit Card Default Prediction – CS613 Machine Learning Project
 
+**Course:** CS613 – Machine Learning  
+**Project:** Predicting Default of Credit Card Clients  
+**Team:** Priti Sagar, Devdeepsinh Zala, Dennis Zhuang
+
 ---
 
 ## 1. Project Overview
@@ -27,7 +31,6 @@ Credit card defaults cause significant financial losses to banks and other lende
 **Source:** UCI Machine Learning Repository – _Default of Credit Card Clients_
 
 **Link:** [UCI ML Repository](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
-
 
 ---
 
@@ -70,7 +73,7 @@ Credit card defaults cause significant financial losses to banks and other lende
 
 **Feature Engineering:**
 
-- One Hot Encoding MARRIAGE column and Ordinal encoding on EDUCATION column)
+- One Hot Encoding MARRIAGE column and Ordinal encoding on EDUCATION column
 - Numeric features dominate the dataset (Bill amounts, Credit Limit, etc.)
 
 **Class Imbalance Handling:**
@@ -81,7 +84,7 @@ Credit card defaults cause significant financial losses to banks and other lende
 
 ### 5.2. Feature Selection
 
-**Original features:** 25  
+**Original features:** 25
 
 **Method:**
 
@@ -111,14 +114,20 @@ Credit card defaults cause significant financial losses to banks and other lende
 1. **Logistic Regression (Baseline)** - Standard model without class balancing
 2. **Logistic Regression (Cost-sensitive)** - With `class_weight='balanced'`
 
-**Advanced Models:** 3. **Decision Tree (Cost-sensitive)** - With class weights 4. **SVM (RBF, Cost-sensitive)** - RBF kernel with class weights 5. **Random Forest (Baseline)** - With `class_weight='balanced'` 6. **Random Forest (Cost-sensitive)** - Custom weights `{0: 1.0, 1: 3.0}`
+**Advanced Models:**
 
-**Ensemble Model:** 7. **Weighted Soft-Voting Ensemble**
+3. **Decision Tree (Cost-sensitive)** - With class weights
+4. **SVM (RBF, Cost-sensitive)** - RBF kernel with class weights
+5. **Random Forest (Baseline)** - With `class_weight='balanced'`
+6. **Random Forest (Cost-sensitive)** - Custom weights `{0: 1.0, 1: 3.0}`
 
-- Combines: Logistic Regression (cost-sensitive) + Decision Tree + SVM
-- Voting: Soft (averages predicted probabilities)
-- Weights: `[2, 2, 4]` (favoring SVM)
-- Novel contribution: Cost-sensitive ensemble approach
+**Ensemble Model:**
+
+7. **Weighted Soft-Voting Ensemble**
+   - Combines: Logistic Regression (cost-sensitive) + Decision Tree + SVM
+   - Voting: Soft (averages predicted probabilities)
+   - Weights: `[2, 2, 4]` (favoring SVM)
+   - Novel contribution: Cost-sensitive ensemble approach
 
 ---
 
@@ -157,7 +166,6 @@ Credit card defaults cause significant financial losses to banks and other lende
 - Best model accuracy: 80.83% (Random Forest cost-sensitive)
 - **Real improvement:** 45-62% recall (catching actual defaults vs 0% for dummy model)
 
-
 ---
 
 ## 7. Business Implications
@@ -195,19 +203,74 @@ For a bank with 1 million customers:
 
 ---
 
-### 8. Project Structure
+## 8. How to Run and Reproduce Results
+
+### 8.1. Prerequisites
+
+- Python 3.8 or higher
+- Jupyter Notebook or VS Code
+- Internet connection (for cloning repository)
+
+### 8.2. Quick Start Guide
+
+#### **Step 1: Clone the Repository**
+
+```bash
+git clone https://github.com/YOUR_USERNAME/credit-card-default-prediction.git
+cd credit-card-default-prediction
+```
+
+#### **Step 2: Install Required Packages**
+
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn openpyxl jupyter
+```
+
+#### **Step 3: Run the Notebook**
+
+1. In Jupyter or vs-code, click on `ML_Final_Project.ipynb` to open it
+2. Click **"Kernel"** → **"Restart & Run All"**
+3. Wait 5-7 minutes for all cells to execute
+4. Results will be displayed inline
+
+### 8.2. Alternative: Google Colab
+
+It can be done without install anything locally:
+
+1. Go to [Google Colab](https://colab.research.google.com/)
+2. Click **"File"** → **"Upload notebook"**
+3. Upload `ML_Final_Project.ipynb`
+4. Upload `default_of_credit_card_clients.xls` using the file upload icon (📁) in the left sidebar
+5. Click **"Runtime"** → **"Run all"**
+
+**Note:** All required libraries are pre-installed in Google Colab!
+
+### 8.8. Verifying Results
+
+To verify the reproduced results, check that final model comparison table shows:
+
+- **Ensemble Model:** ~80.06% accuracy, ~74.35% AUC
+- **Random Forest (Cost-sensitive):** ~80.83% accuracy, ~62.52% precision
+- **Logistic Regression (Baseline):** ~69.00% accuracy, ~62.30% recall
+
+Small variations (±0.5%) are normal due to random state differences.
+
+---
+
+## 9. Project Structure
 
 ```
 credit-card-default-prediction/
 ├── README.md
-├── requirements.txt
-├── default_of_credit_card_clients.xls
-├── ML_Final_Project.ipynb
+├── requirements.txt                       # Python dependencies
+├── default_of_credit_card_clients.xls    # Dataset (30,000 records)
+├── ML_Final_Project.ipynb                # Main notebook with all analysis and results
+└──CS613_Final_Presentation.pdf
 ```
 
 ---
 
-## 9. References
+## 10. References
 
 ### Academic Papers
 
@@ -231,7 +294,7 @@ credit-card-default-prediction/
 
 ---
 
-## 10. Team
+## 11. Team
 
 **Priti Sagar**  
 Email: pp693@drexel.edu
@@ -244,18 +307,15 @@ Email: dz374@drexel.edu
 
 ---
 
-## 11. License
+## 12. License
 
 This project is for educational purposes as part of CS613 Machine Learning course at Drexel University.
 
 ---
 
-## 12. Acknowledgments
+## 13. Acknowledgments
 
 - UCI Machine Learning Repository for providing the dataset
 - Dr. Matthew Burlick for guidance and feedback
 - Prior research by Yeh & Lien (2009) for foundational work
 - scikit-learn community for excellent ML tools
-
----
-
