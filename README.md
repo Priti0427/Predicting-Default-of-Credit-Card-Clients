@@ -354,24 +354,8 @@ For a bank with 1 million customers:
 
 ## 10. Implementation
 
-### 10.1. Requirements
 
-```python
-# Core libraries
-pandas>=1.3.0
-numpy>=1.21.0
-scikit-learn>=1.0.0
-
-# Visualization
-matplotlib>=3.4.0
-seaborn>=0.11.0
-
-# Additional (optional)
-xgboost>=1.5.0
-shap>=0.40.0
-```
-
-### 10.2. Project Structure
+### 10.1. Project Structure
 
 ```
 credit-card-default-prediction/
@@ -379,31 +363,6 @@ credit-card-default-prediction/
 ├── requirements.txt
 ├── default_of_credit_card_clients.xls
 ├── ML_Final_Project.ipynb
-```
-
-### 10.3. Quick Start
-
-```python
-# 1. Load data
-import pandas as pd
-df = pd.read_excel('data/default_of_credit_card_clients.xls', header=1)
-
-# 2. Preprocess
-from src.preprocessing import preprocess_data
-X_train, X_test, y_train, y_test = preprocess_data(df)
-
-# 3. Feature selection
-from src.feature_selection import select_features
-X_train_selected, X_test_selected = select_features(X_train, X_test, y_train)
-
-# 4. Train ensemble
-from src.models import train_ensemble
-ensemble_model = train_ensemble(X_train_selected, y_train)
-
-# 5. Evaluate
-from src.evaluation import evaluate_model
-metrics = evaluate_model(ensemble_model, X_test_selected, y_test)
-print(metrics)
 ```
 
 ---
@@ -454,7 +413,7 @@ This project is for educational purposes as part of CS613 Machine Learning cours
 ## 14. Acknowledgments
 
 - UCI Machine Learning Repository for providing the dataset
-- Dr. [Instructor Name] for guidance and feedback
+- Dr. Matthew Burlick for guidance and feedback
 - Prior research by Yeh & Lien (2009) for foundational work
 - scikit-learn community for excellent ML tools
 
