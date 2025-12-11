@@ -147,7 +147,7 @@ We plan to train and compare:
 
   - Baseline model.
   - Popular in credit risk due to interpretability.
-  - Potentially with regularization (`L1`, `L2`) and `class_weight='balanced'`.
+  - Potentially with `class_weight='balanced'`.
 
 - **Decision Tree (DT)**
 
@@ -159,10 +159,9 @@ We plan to train and compare:
   - Handles high-dimensional boundaries.
   - Can capture complex margins (with kernel tricks).
 
-- **Ensemble Methods (Planned)**
+- **Ensemble Methods**
   - **Random Forest**
-  - **Voting Classifier** (e.g., LR + DT)
-  - **AdaBoost / Gradient Boosting** (if time permits)
+  - **Voting Classifier** (e.g., LR + DT+SVM)
   - Motivation: prior work shows tree ensembles often outperform single models.
 
 5. **Model Evaluation**
@@ -187,7 +186,7 @@ Given class imbalance, we will pay particular attention to **Recall** and **AUC*
   - `scikit-learn` for models & preprocessing
   - `matplotlib` / `seaborn` for plots
 - Development:
-  - **Google Colab** notebook (uses `drive.mount()` for dataset in Drive).
+  - **Google Colab** notebook .
 
 ### 6.2. Basic Usage
 
@@ -206,15 +205,9 @@ Given class imbalance, we will pay particular attention to **Recall** and **AUC*
    - Preprocessing
    - Model training
    - Model evaluation
-   - (Planned) Ensemble models & explainability
-
-_(We can add a more detailed “How to Run” with exact paths once the repo structure is finalized.)_
-
----
+   - Ensemble models & explainability
 
 ## 7. Results & Observations
-
-> **Note:** This section should be updated once final experiments are complete.
 
 Planned content:
 
@@ -345,3 +338,5 @@ Journal of Risk and Financial Management, 2024.
 
 This can be adjusted as the project evolves.
 ```
+
+Team: **Devdeep · Dennis · Priti**  
