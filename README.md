@@ -1,9 +1,5 @@
 # Credit Card Default Prediction – CS613 Machine Learning Project
 
-**Course:** CS613 – Machine Learning  
-**Project:** Predicting Default of Credit Card Clients  
-**Team:** Priti Sagar, Devdeepsinh Zala, Dennis Zhuang
-
 ---
 
 ## 1. Project Overview
@@ -32,38 +28,6 @@ Credit card defaults cause significant financial losses to banks and other lende
 
 **Link:** [UCI ML Repository](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
 
-### Dataset Characteristics
-
-- **30,000 observations**
-- **25 features** (24 predictors + 1 target)
-- **No missing values** after cleaning
-- **Class Imbalance:** 78% non-default, 22% default
-
-### Feature Groups
-
-**Demographics:**
-
-- SEX, EDUCATION, MARRIAGE, AGE
-
-**Credit Information:**
-
-- LIMIT_BAL (Credit limit)
-
-**Repayment Status (6 months):**
-
-- PAY_0, PAY_2, PAY_3, PAY_4, PAY_5, PAY_6
-
-**Bill Amounts (6 months):**
-
-- BILL_AMT1 through BILL_AMT6
-
-**Payment Amounts (6 months):**
-
-- PAY_AMT1 through PAY_AMT6
-
-**Target Variable:**
-
-- `default payment next month` (0 = No default, 1 = Default)
 
 ---
 
