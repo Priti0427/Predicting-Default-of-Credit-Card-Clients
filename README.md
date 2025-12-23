@@ -195,7 +195,7 @@ Credit card defaults cause significant financial losses to banks and other lende
 
 For a bank with 1 million customers:
 
-- **Without model:** Cannot identify high-risk customers proactively
+- **Without model:** Cannot identify high-risk customers
 - **With ensemble model:** Can flag ~45% of potential defaults
 - **Estimated savings:** Depends on default amounts, but significant risk reduction
 
