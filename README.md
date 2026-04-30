@@ -291,13 +291,10 @@ credit-card-default-prediction/
 ## 11. Team
 
 **Priti Sagar**  
-Email: pp693@drexel.edu
 
 **Devdeepsinh Zala**  
-Email: dkz27@drexel.edu
 
 **Dennis Zhuang**  
-Email: dz374@drexel.edu
 
 ---
 
