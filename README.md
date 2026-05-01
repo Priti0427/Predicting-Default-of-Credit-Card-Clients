@@ -290,11 +290,9 @@ credit-card-default-prediction/
 
 ## 11. Team
 
-**Priti Sagar**  
-
-**Devdeepsinh Zala**  
-
-**Dennis Zhuang**  
+- Priti Sagar
+- Devdeepsinh Zala 
+- Dennis Zhuang 
 
 ---
 
