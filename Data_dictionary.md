@@ -105,7 +105,7 @@ All numerical features are standardized using StandardScaler:
 
 ### 3. Feature Selection
 
-Top features selected based on combined importance from:
+Top features were selected based on combined feature importance from:
 
 - Logistic Regression coefficients (absolute values)
 - Random Forest feature importance (Gini importance)
