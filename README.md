@@ -203,7 +203,6 @@ For a bank with 1 million customers:
 
 - Python 3.8 or higher
 - Jupyter Notebook or VS Code
-- Internet connection (for cloning repository)
 
 ### 8.2. Quick Start Guide
 
