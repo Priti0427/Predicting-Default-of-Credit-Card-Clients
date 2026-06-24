@@ -28,7 +28,7 @@ Credit card defaults cause significant financial losses to banks and other lende
 
 ---
 
-## 4. Related Work
+## 4. Related Prior Work
 
 ### Yeh & Lien (2009) – Original Study
 
