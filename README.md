@@ -209,7 +209,7 @@ For a bank with 1 million customers:
 #### **Step 1: Clone the Repository**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/credit-card-default-prediction.git
+git clone https://github.com/priti0427/credit-card-default-prediction.git
 cd credit-card-default-prediction
 ```
 
