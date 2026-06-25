@@ -61,7 +61,7 @@ Credit card defaults cause significant financial losses to banks and other lende
 
 **Cleaning:**
 
-- Dropped ID column
+- Dropped ID column(not required for Prediction)
 - Validated data types and ranges
 - Confirmed no missing values
 
