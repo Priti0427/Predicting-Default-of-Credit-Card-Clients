@@ -223,8 +223,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn openpyxl jupyter
 
 1. In Jupyter or vs-code, click on `ML_Final_Project.ipynb` to open it
 2. Click **"Kernel"** → **"Restart & Run All"**
-3. Wait 5-7 minutes for all cells to execute
-4. Results will be displayed inline
+3. Results will be displayed inline
 
 ### 8.2. Alternative: Google Colab
 
