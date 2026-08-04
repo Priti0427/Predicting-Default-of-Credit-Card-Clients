@@ -146,7 +146,7 @@ Credit card defaults cause significant financial losses to banks and other lende
 - Achieves the best balance across all metrics
 - 80.06% accuracy
 - 74.35% AUC-ROC (strong discriminative ability)
-- Combines interpretability of LR with power of SVM and decision Tree
+- Combines interpretability of LR(Logistic Regression) with power of SVM and decision Tree
 
 **Recall vs Precision Trade-off:**
 
