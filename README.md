@@ -256,7 +256,7 @@ credit-card-default-prediction/
 ├── README.md
 ├── requirements.txt                       # Python dependencies
 ├── default_of_credit_card_clients.xls    # Dataset (30,000 records)
-├── ML_Final_Project.ipynb                # Main notebook with all analysis and results
+├── ML_Final_Project.ipynb                # Notebook with all analysis and results
 └──CS613_Final_Presentation.pdf
 ```
 
