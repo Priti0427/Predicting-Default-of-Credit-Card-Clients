@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-Credit card defaults cause significant financial losses to banks and other lenders. The goal of this project is to build machine learning models that **predict whether a credit card client will default in the next month**, using historical billing, payment, and demographic information.
+Credit card defaults cause significant financial losses to banks and other lenders. The goal of this project is to build an efficient machine learning model that **predict whether a credit card client will default in the next month**, using historical billing, payment, and demographic information.
 
 ### Key Achievements
 
