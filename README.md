@@ -49,7 +49,7 @@ Credit card defaults cause significant financial losses to banks and other lende
 ### Our Contribution
 
 - Novel weighted soft-voting ensemble combining cost-sensitive models
-- Feature selection using intersection of Logistic Regression and Random Forest importance
+- Feature selection using the intersection of Logistic Regression and Random Forest importance
 - Balanced approach between performance and interpretability
 - Focus on business-relevant metrics (Recall for default detection)
 
