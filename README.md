@@ -16,7 +16,7 @@ Credit card defaults cause significant financial losses to banks and other lende
 
 ## 2. Problem Statement
 
-> **Task:** Given a client's historical credit and payment behavior, predict whether they will **default on payment in the next month**.
+> **Task:** Given a client's historical credit and payment behavior, predict if they will **default on payment in the next month**.
 
 ---
 
