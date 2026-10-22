@@ -150,9 +150,9 @@ Credit card defaults cause significant financial losses to banks and other lende
 
 **Recall vs Precision Trade-off:**
 
-- **High Recall Models** (Logistic Regression): Catch more defaults but with more false alarms
-- **High Precision Models** (Random Forest): Fewer false alarms but miss more defaults
-- **Balanced Models** (Ensemble, SVM): Best results for business use
+- **High Recall Model** (Logistic Regression): Catch more defaults but with more false alarms
+- **High Precision Model** (Random Forest): Fewer false alarms but miss more defaults
+- **Balanced Model** (Ensemble, SVM): Best results for business use
 
 **Performance Improvement:**
 
